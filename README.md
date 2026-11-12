@@ -10,6 +10,16 @@ Abre `index.html` en un navegador. La carta y las fotos funcionan sin conexión;
 
 El diseño se adapta a computadora y celular. Toca una foto para ampliarla y usa las flechas, desliza sobre ella o pulsa las teclas ← y → para recorrer el álbum. Ciérrala con la X o Escape. Al final hay una pequeña sorpresa.
 
+## Publicar en Netlify
+
+En el panel de Netlify, selecciona **Add new project → Import an existing project → GitHub** y elige `hernandezcarlos08/No_lo_olvides`.
+
+- Rama de producción: `main`.
+- Comando de compilación: dejar vacío.
+- Carpeta de publicación: `.` (la raíz).
+
+El archivo `netlify.toml` ya define la carpeta de publicación. Al conectar el repositorio, Netlify podrá publicar automáticamente los próximos cambios que subas a `main`.
+
 ## Publicar en GitHub Pages
 
 En el repositorio, abre **Settings → Pages**. En **Build and deployment**, elige **Deploy from a branch**, la rama **main** y la carpeta **/ (root)**. Guarda y espera a que GitHub termine la publicación. La dirección aparecerá en esa misma sección.
